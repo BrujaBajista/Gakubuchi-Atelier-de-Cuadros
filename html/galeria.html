@@ -15,10 +15,10 @@
     <body>
         <header>
             <div class="encabezado">
-                <a class="a-busqueda" href="../index.html"> <img class="busqueda" src="../logos/busqueda.png" alt="logo lupa de busqueda"></a>
-                <a class="mb-logo" href="../index.html"> <img class="logo" src="../logos/logo-largo.png" alt="logo del taller y su nombre Gakubuchi Atelier"></a>
-                <a class="a-carrito" href="../index.html"> <img class="carrito" src="../logos/carrito.png" alt="logo carrito de compras"></a>
-
+                <a class="a-busqueda" ><input class="busqueda" type="image" src="../logos/busqueda.png" alt="logo lupa de busqueda"></a>
+                <a class="mb-logo" href="../index.html"><input class="logo" type="image" src="../logos/logo-largo.png" alt="logo del taller y su nombre Gakubuchi Atelier"></a>
+                <a class="a-carrito"><input class="carrito" type="image" src="../logos/carrito.png" alt="logo carrito de compras"></a>
+                
                 <div class="a-carrito-container">
                     <h2 class="texto-carrito">Carrito de Compras</h2>
                     <ul id="carrito-lista"></ul>
@@ -52,29 +52,95 @@
             <a class="mb-carrito" href="../index.html"> <img class="carrito" src="../logos/carrito.png" alt="logo carrito de compras version mobile"></a>
             <h3 class="indexh3-mb">Atelier de Cuadros Artesanales</h3>
         </div>
+
         <div class="galeria-obras">
-            <h2 class="galeriah2-mb">Galeria de Arte Virtual</h2>
-            <p class="parrafo-gav">Obras de nuestros clientes, hechas a mano, totalmente personalizadas y con mucha dedicacion en cada uno de sus detalles.</p>
-            <img class="trabajos-verticales" alt="trabajos terminados de clientes"src="../trabajos/obra1.png">
-            <img class="trabajos-verticales" alt="trabajos terminados de clientes"src="../trabajos/obra2.png">
-            <img class="trabajos-verticales" alt="trabajos terminados de clientes"src="../trabajos/obra3.png">
-            <img class="trabajos-horizontales" alt="trabajos terminados de clientes"src="../trabajos/obra4.png">
-            <img class="trabajos-horizontales" alt="trabajos terminados de clientes"src="../trabajos/obra5.png">
-            <img class="trabajos-horizontales" alt="trabajos terminados de clientes"src="../trabajos/obra7.png">
-        </div>    
+            <div class="texto-gav">
+                <h2 class="galeriah2-mb">Galeria de Arte Virtual</h2>
+                <p class="parrafo-gav">Obras de nuestros clientes, hechas a mano, totalmente personalizadas y con mucha dedicacion en cada uno de sus detalles.</p>
+            </div>
+
+            <div class="carousel-gav">
+                <div class="carousel-gav-inner">
+                    <figure>
+                        <div class="v-flipcard">
+                            <div class="v-flipcard-inner">
+                                <div class="v-flipcard-front">
+                                    <img class="trabajos-verticales" src="../trabajos/obra1.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="v-flipcard-back">
+                                    <img class="trabajos-verticales" src="../trabajos/obra8.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                    <figure>
+                        <div class="h-flipcard">
+                            <div class="h-flipcard-inner">
+                                <div class="h-flipcard-front">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra4.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="h-flipcard-back">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra7.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                    <figure>
+                        <div class="v-flipcard">
+                            <div class="v-flipcard-inner">
+                                <div class="v-flipcard-front">
+                                    <img class="trabajos-verticales" src="../trabajos/obra2.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="v-flipcard-back">
+                                    <img class="trabajos-verticales" src="../trabajos/obra9.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                    <figure>
+                        <div class="h-flipcard">
+                            <div class="h-flipcard-inner">
+                                <div class="h-flipcard-front">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra5.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="h-flipcard-back">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra10.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <div class="v-flipcard">
+                            <div class="v-flipcard-inner">
+                                <div class="v-flipcard-front">
+                                    <img class="trabajos-verticales" src="../trabajos/obra3.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="v-flipcard-back">
+                                    <img class="trabajos-verticales" src="../trabajos/obra12.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div> 
+                    </figure>
+
+                    <figure>
+                        <div class="h-flipcard">
+                            <div class="h-flipcard-inner">
+                                <div class="h-flipcard-front">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra6.png" alt="trabajos terminados de clientes">
+                                </div>
+                                <div class="h-flipcard-back">
+                                    <img class="trabajos-horizontales" src="../trabajos/obra11.png" alt="trabajos terminados de clientes">
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>    
     
-
-
-
-
-
-
-
-
-
-
-
-
         <footer>
             <div class="redes-footer">
                 <a class="instagram"  href="https://www.instagram.com/gakubuchiatelier/" target="_blank"><img class="logo-instagram" src="../logos/instagram.png" alt="logo de la red social instagram"></a>
@@ -88,6 +154,6 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="../js/main.js"></script> 
+        <script src="../js/main.js" type="module"></script> 
     </body>
 </html>

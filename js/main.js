@@ -14,7 +14,7 @@ const agregar_carrito = (nombre, precio) => {
     carrito_local_storage();
     console.log(carrito);
     Toastify({
-        text: "Producto agregado al Carrito",
+        text: "Producto Agregado al Carrito",
         duration: 700,
         className: "notificacion_producto_agregado",
         style: {
@@ -70,7 +70,7 @@ const restar_producto = (nombre) => {
             } else {
                 e.cantidad = 0;
                 Toastify({
-                    text: "Producto eliminado del Carrito",
+                    text: "Producto Eliminado del Carrito",
                     duration: 700,
                     className: "notificacion_producto_eliminado",
                     style: {
@@ -127,12 +127,14 @@ const carrito_local_storage = () => {
     localStorage.setItem("storage_del_carrito", JSON.stringify(carrito));
 };
 
-let botones_agregar_carrito = document.querySelectorAll(".agregar-carrito");
-botones_agregar_carrito.forEach((boton) => {
-    boton.addEventListener("click", () => {
+export const funcion_boton = () => {
+    let botones_agregar_carrito = document.querySelectorAll(".agregar-carrito");
+        botones_agregar_carrito.forEach((boton) => {
+        boton.addEventListener("click", () => {
         let { textContent: nombre_producto } = boton.parentNode.querySelector(".nombre-productos");
         let { textContent: precio_producto } = boton.parentNode.querySelector(".precio-productos");
         agregar_carrito(nombre_producto, precio_producto);
+        });
     });
-});
+}
 actualizar_carrito();

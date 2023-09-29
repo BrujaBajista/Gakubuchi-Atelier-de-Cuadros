@@ -1,0 +1,67 @@
+{
+    "Productos": [
+        {
+            "id": 1,
+            "nombre": "Cuadro A3 (30x45)",
+            "imagen": "../trabajos/marco-rectangular-madera.png",
+            "alt": "cuadro A3 (30x45) con marco color a eleccion",
+            "precio": 7000
+        },
+        {
+            "id": 2,
+            "nombre": "Cuadro A4 (21x30cm)",
+            "imagen": "../trabajos/marco-rectangular-madera.png",
+            "alt": "cuadro A4 (21x30cm) con marco color a eleccion",
+            "precio": 10000
+        },
+        {
+            "id": 3,
+            "nombre": "Cuadro A5 (15x25cm)",
+            "imagen": "../trabajos/marco-rectangular-madera.png",
+            "alt": "cuadro A5 (15x25cm) con marco color a eleccion",
+            "precio": 6000
+        },
+        {
+            "id": 4,
+            "nombre": "Cuadro Portaretrato (13x18cm)",
+            "imagen": "../trabajos/marco-rectangular-madera.png",
+            "alt": "cuadro A3 (30x45) con marco color a eleccion",
+            "precio": 4000
+        },
+        {
+            "id": 5,
+            "nombre": "Cuadro Personalizado",
+            "imagen": "../trabajos/marco-rectangular-madera.png",
+            "alt": "cuadro personalizado a medida",
+            "precio": 0
+        },
+        {
+            "id": 6,
+            "nombre": "Espejo Personalizado",
+            "imagen": "../trabajos/espejo-color-madera.png",
+            "alt": "espejo personalizado a medida",
+            "precio": 0
+        },
+        {
+            "id": 7,
+            "nombre": "Ventana de Passepartou",
+            "imagen": "../trabajos/ventana-passepartout.png",
+            "alt": "ventana passepartou a medida",
+            "precio": 2000
+        },
+        {
+            "id": 8,
+            "nombre": "Poster de Anime",
+            "imagen": "../trabajos/poster.png",
+            "alt": "poster de anime con marco negro",
+            "precio": 7000
+        },
+        {
+            "id": 9,
+            "nombre": "Foto Bajo Blanco y Negro",
+            "imagen": "../trabajos/foto.png",
+            "alt": "foto de instrumento musical Bajo con marco color negro",
+            "precio": 7000
+        }
+    ]    
+}

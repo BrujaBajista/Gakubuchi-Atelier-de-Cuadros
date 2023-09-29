@@ -1,0 +1,115 @@
+.carousel-gav {
+    width: 250px;
+    height: 350px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    .carousel-gav-inner {
+        width: 100%;
+        position: absolute;
+        animation: rotate 25s linear infinite;
+        transform-style: preserve-3d;
+        align-items: center;
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(-360deg);
+            }
+        }        
+        &:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+        figure {
+            position: absolute;
+            transform-style: preserve-3d;
+            align-items: center;
+            justify-content: center;
+
+            &:nth-child(1) {
+                transform: rotateY(0deg) translateZ(270px);
+            }
+            &:nth-child(2) {
+                transform: rotateY(60deg) translateZ(270px);
+            }
+            &:nth-child(3) {
+                transform: rotateY(120deg) translateZ(270px);
+            }
+            &:nth-child(4) {
+                transform: rotateY(180deg) translateZ(270px);
+            }
+            &:nth-child(5) {
+                transform: rotateY(240deg) translateZ(270px);
+            }
+            &:nth-child(6) {
+                transform: rotateY(300deg) translateZ(270px);
+            }
+            .v-flipcard {
+                width: 200px;
+                height: 250px;
+                margin-top: 70px;
+                border-radius: 17px;
+                justify-content: center;
+                .v-flipcard-inner {
+                    position: relative;
+                    border-radius: 17px;
+                    transition: transform 1s;
+                    transform-style: preserve-3d;
+                    .v-flipcard-front, .v-flipcard-back {
+                        position: absolute;
+                        backface-visibility: hidden;
+                        .trabajos-verticales {
+                            width: 200px;
+                            height: 250px;
+                            border: 5px solid #000000;
+                            border-radius: 17px;
+                            object-fit: cover;
+                            box-shadow:  10px 10px 24px #000000AB, -10px -10px 24px #2c9fa3;
+                        }
+                    }
+                    .v-flipcard-back {
+                        transform: rotateY(-180deg);
+                    }
+                    &:hover {
+                        transform: rotateY(-180deg) scale(1.2);
+                    }
+                }
+            }
+            .h-flipcard {
+                width: 250px;
+                height: 200px;
+                margin-top: 70px;
+                border-radius: 17px;
+                .h-flipcard-inner {
+                    position: relative;
+                    border-radius: 17px;
+                    transition: transform 1s;
+                    transform-style: preserve-3d;
+                    .h-flipcard-front, .h-flipcard-back {
+                        position: absolute;
+                        backface-visibility: hidden;
+                        .trabajos-horizontales {
+                            width: 250px;
+                            height: 200px;
+                            border: 5px solid #000000;
+                            border-radius: 17px;
+                            object-fit: cover;
+                            box-shadow:  10px 10px 24px #000000AB, -10px -10px 24px #2c9fa3;        
+                        }
+                    }
+                    .h-flipcard-back {
+                        transform: rotateY(-180deg);
+                    }
+                    &:hover {
+                        transform: rotateY(-180deg) scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
