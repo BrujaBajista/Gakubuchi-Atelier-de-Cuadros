@@ -2,7 +2,7 @@ import { funcion_boton } from "../main.js";
 
 const api_productos = async () => {
     try {
-        const response = await fetch("http://localhost:3000/Productos");
+        const response = await fetch("http://localhost:https://github.com/BrujaBajista/ProyectoFinalAlvarezQuintanaOrdiz/blob/main/js/api/apiproductos.json/Productos");
         const datos = await response.json();
         const productos_json = document.getElementById("productosjson");
         datos?.map(({ imagen, alt, nombre, precio }) => {
