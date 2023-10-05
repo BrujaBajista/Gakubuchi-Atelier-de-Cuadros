@@ -2,7 +2,7 @@ import { funcion_boton } from "../main.js";
 
 const api_productos = async () => {
     try {
-        const response = await fetch("http://localhost:3000/Productos");
+        const response = await fetch("https://my-json-server.typicode.com/brujabajista/ProyectoFinalAlvarezQuintanaOrdiz/Productos");
         const datos = await response.json();
         const productos_json = document.getElementById("productosjson");
         datos?.map(({ imagen, alt, nombre, precio }) => {
